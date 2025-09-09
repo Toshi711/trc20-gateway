@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+	"module": "commonjs",
+	"declaration": true,
+	"removeComments": true,
+	"emitDecoratorMetadata": true,
+	"experimentalDecorators": true,
+	"allowSyntheticDefaultImports": true,
+	"target": "ES2020",
+	"sourceMap": true,
+	"baseUrl": "./src",
+	"incremental": false,
+	"skipLibCheck": true,
+	"strictNullChecks": true,
+	"noImplicitAny": true,
+	"strictBindCallApply": false,
+	"forceConsistentCasingInFileNames": false,
+	"noFallthroughCasesInSwitch": false,
+	"strict": true,
+	"esModuleInterop": true,
+	"resolveJsonModule": true,
+	"moduleResolution": "node",
+	"rootDir": "./src",
+	"outDir": "dist",
+	"strictPropertyInitialization": false,
+	"paths": {
+	  "@api/*": [
+		"api/*"
+	  ],
+	  "@share/*": [
+		"share/*"
+	  ],
+	  "@config": [
+		"app.config"
+	  ],
+	  "@logger": [
+		"app.logger"
+	  ],
+	  "@db/*": [
+		"db/*"
+	  ],
+	  "@modules/*": [
+		"modules/*"
+	  ],
+	  "@testing/*": [
+		"testing/*"
+	  ]
+	}
+  },
+  "exclude": [
+	"node_modules",
+	"dist"
+  ],
+  "include": [
+	"src/**/*.ts",
+	"src/**/*.d.ts"
+  ]
+}
